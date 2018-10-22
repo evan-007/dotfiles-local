@@ -1,0 +1,71 @@
+colorscheme jellybeans
+
+" set relativenumber
+"
+syntax on
+set autoindent
+filetype indent on
+filetype plugin on
+
+let g:rspec_runner = "os_x_iterm"
+nnoremap <Leader>p :CtrlP<Return>
+nnoremap <Leader>m :Move
+nnoremap <Leader>r :Rename
+nnoremap <Leader>db :edit db/schema.rb<Return>
+nnoremap <Leader>o :edit config/routes.rb<Return>
+nnoremap <Leader>j :!npm test<Return>
+
+" easy indent
+map <Leader>i mmgg=G`m<CR>
+
+map <Leader>v :split<CR>
+" open test/file in split for rails
+map <Leader>q :split<CR>:A<CR>
+
+" testing stuff
+nnoremap <Leader>a :!bin/rails test<Return>
+nnoremap <Leader>t :VroomRunTestFile<Return>
+nnoremap <Leader>l :VroomRunLastTest<Return>
+nnoremap <Leader>s :VroomRunNearestTest<Return>
+
+" use spring to run vroom tests, rails 4 plm-website :(
+" let g:vroom_test_unit_command = 'bin/rake test:files'
+
+" rails 5!
+let g:vroom_test_unit_command = 'bin/rails test'
+
+" stupid local gems
+map <Leader>te :!bundle exec rake test<CR>
+
+" runs all changed tests that are staged
+map <Leader>c :!git diff --staged --name-only \| ag test \| xargs bin/rake test:files<CR>
+" runs all changed tests that aren't staged think of better leader
+" map <Leader>t :!git diff --name-only \| ag test \| xargs bin/rake test:files<CR>
+
+" tab complete
+" imap <Tab> <C-P>
+
+" snippets with shift + tab
+imap <S-Tab> <Plug>snipMateNextOrTrigger
+smap <S-Tab> <Plug>snipMateNextOrTrigger
+" imap <Tab> <Plug>snipMateNextOrTrigger
+
+" es6 config
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+
+" handlebars
+au BufReadPost *.hbs set syntax=html
+" elixir templates
+" au BufReadPost *.eex set syntax=html
+" prisma graphql
+au BufReadPost *.prisma set syntax=graphql
+
+
+" goodies
+" extract local var to let
+map <Leader>let yy?describe<Return>pi:<ESC>ys2w)ilet<ESC>/=<Return>2xys${==
+
+" rubocop
+" too slow
+" let g:syntastic_ruby_checkers = ['rubocop']
+
