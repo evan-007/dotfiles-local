@@ -68,4 +68,3 @@ map <Leader>let yy?describe<Return>pi:<ESC>ys2w)ilet<ESC>/=<Return>2xys${==
 " rubocop
 " too slow
 " let g:syntastic_ruby_checkers = ['rubocop']
-
