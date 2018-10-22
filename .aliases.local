@@ -1,0 +1,45 @@
+# git
+alias g='git'
+alias gs='git status'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gb='git branch'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias rcd='git diff -z --name-only | xargs rubocop' # rubocop the diff
+alias rcds='git diff -z --name-only --staged  | xargs rubocop' # staged
+alias rcp='git diff HEAD^ HEAD --name-only | xargs rubocop' # previous commit
+
+# ruby
+alias b='bundle'
+alias bi='bundle install'
+alias be='bundle exec'
+
+# rails
+alias dbm='bundle exec rake db:migrate'
+# runs Changed tests from staged files in git
+alias ct='git diff --staged --name-only | ag test | xargs bin/rake test:files'
+# runs changed unstaged tests
+alias t='git diff --name-only | ag test | xargs bin/rake test:files'
+alias rc='bin/rails c'
+alias rs='bin/rails s'
+
+# ect
+alias notes='vim ~/.notes.md'
+alias todo='vim ~/.todo.md'
+alias til='vim ~/.TIL.md'
+
+alias fs='foreman start'
+
+# start plm-website
+alias s='cd ~/plm/plm-website; threeman start --open-in-new-tab; cd ~/plm/newswire; threeman start --open-in-new-tab; ~/plm/elasticsearch-5.2.0/bin/elasticsearch'
+
+alias y='yarn'
+
+# always private
+alias gist="gist -p"
+
+alias hg='history | grep'
+
+# stupid hung rails servers
+alias dieruby="pkill ruby --term KILL"
