@@ -1,3 +1,4 @@
+Plugin 'MarcWeber/vim-addon-mw-utils' " needed for snipmate
 Plugin 'evan-007/vim-extest'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
@@ -7,6 +8,7 @@ Plugin 'reasonml-editor/vim-reason-plus'
 Plugin 'scrooloose/syntastic'
 Plugin 'skalnik/vim-vroom'
 Plugin 'styled-components/vim-styled-components'
+Plugin 'tomtom/tlib_vim' " needed for snipmate
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
