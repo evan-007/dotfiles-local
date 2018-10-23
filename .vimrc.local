@@ -1,4 +1,4 @@
-set runtimepath+=./.vim " load snippets etc from my dotfiles
+set runtimepath+=~/.dotfiles/.vim " load snippets etc from my dotfiles
 
 colorscheme jellybeans
 
@@ -66,7 +66,3 @@ au BufReadPost *.prisma set syntax=graphql
 " goodies
 " extract local var to let
 map <Leader>let yy?describe<Return>pi:<ESC>ys2w)ilet<ESC>/=<Return>2xys${==
-
-" rubocop
-" too slow
-" let g:syntastic_ruby_checkers = ['rubocop']
