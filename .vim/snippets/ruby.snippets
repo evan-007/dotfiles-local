@@ -1,0 +1,22 @@
+snippet desc
+	describe '${1}' do
+	  it '${2}' do
+		end
+	end
+
+snippet it
+	it '${1}' do
+	end
+
+snippet mtest
+	require 'test_helper'
+
+	class ${1}Test < ActiveSupport::TestCase
+	  describe "${2}" do
+		  it "${3}" do
+			end
+	  end
+	end
+
+snippet bp
+	binding.pry
