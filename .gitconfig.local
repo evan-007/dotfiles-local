@@ -1,0 +1,13 @@
+[core]
+  editor = vim
+  excludesfile = /Users/elloyd/.gitignore_global
+[color]
+  status = auto
+  ff = auto
+  branch = auto
+[alias]
+  co = checkout
+  st = status
+  ci = commit
+  undo = reset HEAD~ # reverts last commit
+  unstage = reset HEAD
