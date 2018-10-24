@@ -9,5 +9,6 @@
   co = checkout
   st = status
   ci = commit
+  ds = diff --staged
   undo = reset HEAD~ # reverts last commit
   unstage = reset HEAD

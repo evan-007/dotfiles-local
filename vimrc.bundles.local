@@ -1,0 +1,13 @@
+Plug 'MarcWeber/vim-addon-mw-utils' " needed for snipmate
+Plug 'evan-007/vim-extest'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'jparise/vim-graphql'
+Plug 'mxw/vim-jsx'
+Plug 'reasonml-editor/vim-reason-plus'
+Plug 'skalnik/vim-vroom'
+Plug 'styled-components/vim-styled-components'
+Plug 'tomtom/tlib_vim' " needed for snipmate
+Plug 'vim-scripts/ctags.vim'
+Plug 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/tComment'

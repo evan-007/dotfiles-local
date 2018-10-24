@@ -1,4 +1,4 @@
-set runtimepath+=~/.dotfiles/.vim " load snippets etc from my dotfiles
+set runtimepath+=~/dotfiles-local/vim " load snippets etc from my dotfiles
 
 colorscheme jellybeans
 
