@@ -1,5 +1,4 @@
 # git
-alias g='zshgit' # remove oh-my-zsh alias in favor of g function from .zshrc.local
 alias gs='git status'
 alias gd='git diff'
 alias gds='git diff --staged'
