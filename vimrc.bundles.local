@@ -2,6 +2,7 @@ Plug 'MarcWeber/vim-addon-mw-utils' " needed for snipmate
 Plug 'evan-007/vim-extest'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
+Plug 'jiangmiao/auto-pairs'
 Plug 'jparise/vim-graphql'
 Plug 'mxw/vim-jsx'
 Plug 'reasonml-editor/vim-reason-plus'
