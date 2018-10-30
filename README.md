@@ -8,3 +8,15 @@ the base.
 * clone the thoughtbot dotfiles
 * clone this repo to `~/dotfiles-local`
 * Run `rcup`
+
+Until I automate nvim setup with a hook:
+
+```
+mkdir -p ~/.config/nvim
+nvim ~/.config/nvim/init.vim
+
+# init.vim
+set runtimepath+=~/.vim,~/.vim/after
+set packpath+=~/.vim
+source ~/.vimrc
+```
