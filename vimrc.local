@@ -15,7 +15,6 @@ nnoremap <Leader>m :Move
 nnoremap <Leader>r :Rename
 nnoremap <Leader>db :edit db/schema.rb<Return>
 nnoremap <Leader>o :edit config/routes.rb<Return>
-nnoremap <Leader>j :!npm test<Return>
 
 " easy indent
 map <Leader>i mmgg=G`m<CR>
