@@ -26,9 +26,9 @@ alias rc='bin/rails c'
 alias rs='bin/rails s'
 
 # ect
-alias notes='vim ~/.notes.md'
-alias todo='vim ~/.todo.md'
-alias til='vim ~/.TIL.md'
+alias notes='nvim ~/.notes.md'
+alias todo='nvim ~/.todo.md'
+alias til='nvim ~/.TIL.md'
 
 alias fs='foreman start'
 
