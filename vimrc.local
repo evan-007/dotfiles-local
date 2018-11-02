@@ -9,6 +9,9 @@ set autoindent
 filetype indent on
 filetype plugin on
 
+" markdown spelling errors are annoying
+autocmd BufRead,BufNewFile *.md set nospell
+
 let g:rspec_runner = "os_x_iterm"
 nnoremap <Leader>p :CtrlP<Return>
 nnoremap <Leader>m :Move
