@@ -3,6 +3,9 @@
 # helpful for having different profiles w/text sizes for different screen sizes
 function use() { echo -e "\033]50;SetProfile=$1\a" }
 
+# machine specific configs should live in this file, like rbenv stuff
+source ~/.zshrc.machine-local
+
 # add dirs to cd into their contents from anywhere directly
 CDPATH=:~:~/plm
 
@@ -50,16 +53,3 @@ function git_prompt_info() {
 }
 
 PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
-
-## work machine specific
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# from brew install nvm instructions
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
-# postgres
-export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
