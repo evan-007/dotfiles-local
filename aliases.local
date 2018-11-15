@@ -11,6 +11,10 @@ alias rcd='git diff -z --name-only | xargs rubocop' # rubocop the diff
 alias rcds='git diff -z --name-only --staged  | xargs rubocop' # staged
 alias rcp='git diff HEAD^ HEAD --name-only | xargs rubocop' # previous commit
 
+# k8s
+alias k='kubectl'
+alias d='docker'
+
 # ruby
 alias b='bundle'
 alias bi='bundle install'
