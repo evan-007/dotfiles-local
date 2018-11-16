@@ -8,7 +8,7 @@ Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'mxw/vim-jsx'
 Plug 'reasonml-editor/vim-reason-plus'
 Plug 'skalnik/vim-vroom'
-Plug 'styled-components/vim-styled-components'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tomtom/tlib_vim' " needed for snipmate
 Plug 'vim-scripts/ctags.vim'
 Plug 'vim-scripts/matchit.zip'
