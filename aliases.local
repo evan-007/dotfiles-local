@@ -44,7 +44,8 @@ alias y='yarn'
 # always private
 alias gist="gist -p"
 
-alias hg='history | grep'
+# history in zsh only shows 15 entries, history 1 shows all starting from 1
+alias hg='history 1 | grep'
 
 # stupid hung rails servers
 alias dieruby="pkill ruby --term KILL"
