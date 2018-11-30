@@ -2,12 +2,12 @@ Plug 'MarcWeber/vim-addon-mw-utils' " needed for snipmate
 Plug 'evan-007/vim-extest'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
+Plug 'janko-m/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jparise/vim-graphql'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'mxw/vim-jsx'
 Plug 'reasonml-editor/vim-reason-plus'
-Plug 'skalnik/vim-vroom'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tomtom/tlib_vim' " needed for snipmate
 Plug 'tpope/vim-projectionist'

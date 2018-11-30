@@ -29,16 +29,10 @@ map <Leader>v :split<CR>
 map <Leader>q :split<CR>:A<CR>
 
 " testing stuff
-nnoremap <Leader>a :!bin/rails test<Return>
-nnoremap <Leader>t :VroomRunTestFile<Return>
-nnoremap <Leader>l :VroomRunLastTest<Return>
-nnoremap <Leader>s :VroomRunNearestTest<Return>
-
-" use spring to run vroom tests, rails 4 plm-website :(
-" let g:vroom_test_unit_command = 'bin/rake test:files'
-
-" rails 5!
-let g:vroom_test_unit_command = 'bin/rails test'
+nnoremap <Leader>a :TestSuite<Return>
+nnoremap <Leader>t :TestFile<Return>
+nnoremap <Leader>l :TestLast<Return>
+nnoremap <Leader>s :TestNearest<Return>
 
 " stupid local gems
 map <Leader>te :!bundle exec rake test<CR>
