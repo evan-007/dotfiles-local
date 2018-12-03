@@ -28,6 +28,10 @@ map <Leader>v :split<CR>
 " open test/file in split for rails
 map <Leader>q :split<CR>:A<CR>
 
+" copy paste w/leader uses clipboard
+map  <leader>Y  "+yg_
+map <leader>P "+p
+
 " testing stuff
 nnoremap <Leader>a :TestSuite<Return>
 nnoremap <Leader>t :TestFile<Return>
