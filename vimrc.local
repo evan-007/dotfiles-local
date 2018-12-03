@@ -1,7 +1,7 @@
 colorscheme jellybeans
 
 " set relativenumber
-"
+
 syntax on
 set autoindent
 filetype indent on
@@ -36,17 +36,6 @@ nnoremap <Leader>t :TestFile<Return>
 nnoremap <Leader>l :TestLast<Return>
 nnoremap <Leader>s :TestNearest<Return>
 
-" stupid local gems
-map <Leader>te :!bundle exec rake test<CR>
-
-" runs all changed tests that are staged
-map <Leader>c :!git diff --staged --name-only \| ag test \| xargs bin/rake test:files<CR>
-" runs all changed tests that aren't staged think of better leader
-" map <Leader>t :!git diff --name-only \| ag test \| xargs bin/rake test:files<CR>
-
-" tab complete
-" imap <Tab> <C-P>
-
 " snippets with shift + tab
 imap <S-Tab> <Plug>snipMateNextOrTrigger
 smap <S-Tab> <Plug>snipMateNextOrTrigger
@@ -61,7 +50,6 @@ au BufReadPost *.hbs set syntax=html
 " au BufReadPost *.eex set syntax=html
 " prisma graphql
 au BufReadPost *.prisma set syntax=graphql
-
 
 " goodies
 " extract local var to let
