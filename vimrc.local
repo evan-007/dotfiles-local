@@ -1,5 +1,3 @@
-set runtimepath+=~/dotfiles-local/vim " load snippets etc from my dotfiles
-
 colorscheme jellybeans
 
 " set relativenumber
