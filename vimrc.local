@@ -35,6 +35,10 @@ nnoremap <Leader>a :TestSuite<Return>
 nnoremap <Leader>t :TestFile<Return>
 nnoremap <Leader>l :TestLast<Return>
 nnoremap <Leader>s :TestNearest<Return>
+" scroll through test terminal output
+if has('nvim')
+  tmap <C-o> <C-\><C-n>
+endif
 
 " snippets with shift + tab
 imap <S-Tab> <Plug>snipMateNextOrTrigger
