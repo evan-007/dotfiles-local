@@ -18,6 +18,8 @@ nnoremap <Leader>db :edit db/schema.rb<Return>
 nnoremap <Leader>o :edit config/routes.rb<Return>
 " kill search highlighting
 nnoremap <Leader>n :noh<Return>
+" find stuff
+nnoremap <leader>? :Grepper -tool ag -open -switch -cword -noprompt<cr>
 
 " easy indent
 map <Leader>i mmgg=G`m<CR>

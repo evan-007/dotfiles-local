@@ -6,6 +6,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'jparise/vim-graphql'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'martinda/Jenkinsfile-vim-syntax'
+Plug 'mhinz/vim-grepper'
 Plug 'mxw/vim-jsx'
 Plug 'reasonml-editor/vim-reason-plus'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
