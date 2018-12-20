@@ -7,7 +7,6 @@
   branch = auto
 [alias]
   co = checkout
-  st = status
   ci = commit
   ds = diff --staged
   undo = reset HEAD~ # reverts last commit
