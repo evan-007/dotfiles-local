@@ -4,12 +4,6 @@ alias v="nvim"
 # git
 alias gd='git diff'
 alias gds='git diff --staged'
-alias gb='git branch'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias rcd='git diff -z --name-only | xargs rubocop' # rubocop the diff
-alias rcds='git diff -z --name-only --staged  | xargs rubocop' # staged
-alias rcp='git diff HEAD^ HEAD --name-only | xargs rubocop' # previous commit
 
 # k8s
 alias k='kubectl'
