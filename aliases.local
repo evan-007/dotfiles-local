@@ -16,10 +16,7 @@ alias be='bundle exec'
 
 # rails
 alias dbm='bundle exec rake db:migrate'
-# runs Changed tests from staged files in git
-alias ct='git diff --staged --name-only | ag test | xargs bin/rake test:files'
-# runs changed unstaged tests
-alias t='git diff --name-only | ag test | xargs bin/rake test:files'
+alias dbmt='RAILS_ENV=test bundle exec rake db:migrate'
 alias rc='bin/rails c'
 alias rs='bin/rails s'
 
