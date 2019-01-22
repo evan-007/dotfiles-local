@@ -42,6 +42,12 @@ function parse_git_dirty() {
   fi
 }
 
+# run tests over and over for flakiness
+# rep_til_failure bin/rails test test/path
+function rep_til_failure() {
+  while $*;  do : ; done
+}
+
 # Outputs current branch info in prompt format
 function git_prompt_info() {
   local ref
