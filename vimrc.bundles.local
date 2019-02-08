@@ -8,6 +8,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'mhinz/vim-grepper'
 Plug 'mxw/vim-jsx'
+Plug 'posva/vim-vue'
 Plug 'reasonml-editor/vim-reason-plus'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tomtom/tlib_vim' " needed for snipmate
