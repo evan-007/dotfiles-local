@@ -20,6 +20,9 @@ nnoremap <Leader>o :edit config/routes.rb<Return>
 nnoremap <Leader>n :noh<Return>
 " find stuff
 nnoremap <leader>? :Grepper -tool ag -open -switch -cword -noprompt<cr>
+" search results forward / back
+nnoremap <leader>c :cn<cr>
+nnoremap <leader>b :cb<cr>
 
 " easy indent
 map <Leader>i mmgg=G`m<CR>
@@ -60,3 +63,9 @@ au BufReadPost *.prisma set syntax=graphql
 " goodies
 " extract local var to let
 map <Leader>let yy?describe<Return>pi:<ESC>ys2w)ilet<ESC>/=<Return>2xys${==
+
+
+" ale don't eat my cpu please
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
