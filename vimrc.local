@@ -14,7 +14,7 @@ let g:rspec_runner = "os_x_iterm"
 nnoremap <Leader>p :CtrlP<Return>
 nnoremap <Leader>m :Move
 nnoremap <Leader>r :Rename
-nnoremap <Leader>db :edit db/schema.rb<Return>
+nnoremap <Leader>db :edit db/structure.sql<Return>
 nnoremap <Leader>o :edit config/routes.rb<Return>
 " kill search highlighting
 nnoremap <Leader>n :noh<Return>
@@ -69,3 +69,23 @@ map <Leader>let yy?describe<Return>pi:<ESC>ys2w)ilet<ESC>/=<Return>2xys${==
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
+
+" override so ale only lints on save
+augroup ale
+  autocmd!
+
+  if g:has_async
+    autocmd VimEnter *
+      \ set updatetime=1000 |
+      \ let g:ale_lint_on_text_changed = 0
+  else
+    echoerr "The thoughtbot dotfiles require NeoVim or Vim 8"
+  endif
+augroup END
+
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['prettier', 'eslint'],
+\}
+
+let g:ale_fix_on_save = 1
