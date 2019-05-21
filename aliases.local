@@ -40,3 +40,7 @@ alias hg='history 1 | grep'
 
 # kill rbenv processes
 alias dieruby="ps aux |  grep rbenv | grep -v grep |  awk '{print $2}' | xargs kill -9"
+
+# use ctags from homebrew instead of /usr/bin/ctags
+# so neovim doesn't gutentags: ctags job failed, returned: 1
+alias ctags="`brew --prefix`/bin/ctags"
