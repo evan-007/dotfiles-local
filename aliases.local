@@ -1,3 +1,7 @@
+# machine specific configs should live in this file, like kubernetes stuff that
+# shouldn't be on github
+[[ -f ~/.aliases.machine-local ]] && source ~/.aliases.machine-local
+
 # use neovim
 alias v="nvim"
 
