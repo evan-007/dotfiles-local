@@ -20,3 +20,6 @@ set runtimepath+=~/.vim,~/.vim/after
 set packpath+=~/.vim
 source ~/.vimrc
 ```
+
+make sure `excludesfile = /Users/evanlloyd/dotfiles-local/.gitignore` is in
+`~/.gitconfig`
