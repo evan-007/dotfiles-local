@@ -89,3 +89,8 @@ let g:ale_fixers = {
 \}
 
 let g:ale_fix_on_save = 1
+
+" allow project-level vimrc
+set exrc
+" disable unsafe commands coming from project-level vimrc
+set secure
