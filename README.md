@@ -23,3 +23,5 @@ source ~/.vimrc
 
 make sure `excludesfile = /Users/evanlloyd/dotfiles-local/.gitignore` is in
 `~/.gitconfig`
+
+setup global gitignore `git config --global core.excludesfile ~/dotfiles-local/.gitignore`
