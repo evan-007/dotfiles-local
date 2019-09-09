@@ -16,3 +16,4 @@ Plug 'tomtom/tlib_vim' " needed for snipmate
 Plug 'tpope/vim-projectionist'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/tComment'
+Plug 'ctrlpvim/ctrlp.vim'
