@@ -89,6 +89,9 @@ let g:ale_fixers = {
 \}
 
 let g:ale_fix_on_save = 1
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ }
 
 " allow project-level vimrc
 set exrc
