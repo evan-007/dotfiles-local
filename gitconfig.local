@@ -12,3 +12,4 @@
   ds = diff --staged
   undo = reset HEAD~ # reverts last commit
   unstage = reset HEAD
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
