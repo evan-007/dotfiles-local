@@ -1,20 +1,12 @@
 snippet rc
 	import React from 'react';
-	import PropTypes from 'prop-types';
 
-	class ${1:} extends React.Component {
-		static propTypes = {
-
-		}
-
-		render() {
-			return (
-				<p>$1</p>
-			);
-		}
+	const ${1:} = (props) => {
+	  return <p>$1</p>
 	}
 
 	export default $1;
+
 
 
 snippet rf
