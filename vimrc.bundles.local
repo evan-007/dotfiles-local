@@ -1,13 +1,16 @@
 Plug 'MarcWeber/vim-addon-mw-utils' " needed for snipmate
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'janko-m/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jparise/vim-graphql'
+Plug 'leafgarland/typescript-vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'mhinz/vim-grepper'
 Plug 'mxw/vim-jsx'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'posva/vim-vue'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'reasonml-editor/vim-reason-plus'
@@ -16,4 +19,3 @@ Plug 'tomtom/tlib_vim' " needed for snipmate
 Plug 'tpope/vim-projectionist'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/tComment'
-Plug 'ctrlpvim/ctrlp.vim'
