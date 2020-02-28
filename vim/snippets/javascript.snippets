@@ -11,17 +11,10 @@ snippet rc
 
 snippet rf
 	import React from 'react';
-	import PropTypes from 'prop-types';
 
-	const ${1:} = () => {
+	export default () => {
 		return (<div />);
 	};
-
-	$1.propTypes = {
-
-	}
-
-	export default $1;
 
 snippet rt
 	import React from 'react';
@@ -39,6 +32,7 @@ snippet rt
 
 		});
 	});
+
 
 snippet a
 	(${1}) => {${2}}
