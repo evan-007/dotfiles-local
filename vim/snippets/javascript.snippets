@@ -34,6 +34,7 @@ snippet rt
 	});
 
 
+
 snippet a
 	(${1}) => {${2}}
 
@@ -62,7 +63,7 @@ snippet wrap
 snippet rtl
 	import React from 'react';
 	import '@testing-library/jest-dom/extend-expect';
-	import {render, cleanup} from '@testing-library/react';
+	import {render} from '@testing-library/react';
 	import ${1:} from '../$1';
 	import {I18nTestProvider} from '../../../../../components/i18nForTests';
 
@@ -74,5 +75,5 @@ snippet rtl
 				<$1 {...defaultProps} {...props} />
 			</I18nTestProvider>
 		);
-	afterEach(cleanup);
 	});
+
