@@ -44,6 +44,8 @@ nnoremap <Leader>s :TestNearest<Return>
 if has('nvim')
   tmap <C-o> <C-\><C-n>
 endif
+" put a .nvimrc in each repo with command to run the tests in rspec, ie:
+" let test#ruby#rspec#executable = 'docker exec -it container_name bin/rspec'
 
 " snippets with shift + tab
 imap <S-Tab> <Plug>snipMateNextOrTrigger
