@@ -23,6 +23,7 @@ nnoremap <leader>? :Grepper -tool ag -open -switch -cword -noprompt<cr>
 " search results forward / back
 nnoremap <leader>c :cn<cr>
 nnoremap <leader>b :cb<cr>
+nnoremap <leader>gh :OpenGithubFile<cr>
 
 " easy indent
 map <Leader>i mmgg=G`m<CR>
@@ -54,6 +55,7 @@ smap <S-Tab> <Plug>snipMateNextOrTrigger
 
 " es6 config
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+autocmd BufRead,BufNewFile *.es6.jsx setfiletype jsx
 
 " handlebars
 au BufReadPost *.hbs set syntax=html
@@ -88,6 +90,10 @@ augroup END
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['prettier', 'eslint'],
+\   'typescript': ['prettier', 'eslint'],
+\}
+let g:ale_linters = {
+\   'typescript': ['eslint'],
 \}
 
 let g:ale_fix_on_save = 1
