@@ -114,3 +114,6 @@ endif
 set exrc
 " disable unsafe commands coming from project-level vimrc
 set secure
+
+" use new version of parse to stop deprecation warning
+let g:snipMate = { 'snippet_version' : 1 }
