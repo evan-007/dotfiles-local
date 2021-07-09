@@ -1,6 +1,6 @@
 [core]
   editor = /usr/local/bin/nvim
-  excludesfile = /Users/elloyd/.gitignore_global
+  excludesfile = ~/.gitignore
 [color]
   status = auto
   ff = auto
