@@ -24,6 +24,7 @@ nnoremap <leader>? :Grepper -tool ag -open -switch -cword -noprompt<cr>
 nnoremap <leader>c :cn<cr>
 nnoremap <leader>b :cb<cr>
 nnoremap <leader>gh :OpenGithubFile<cr>
+nnoremap <leader>f :ALEFix<cr>
 
 " easy indent
 map <Leader>i mmgg=G`m<CR>
@@ -73,6 +74,7 @@ map <Leader>let yy?describe<Return>pi:<ESC>ys2w)ilet<ESC>/=<Return>2xys${==
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
 
 " override so ale only lints on save
 augroup ale
@@ -91,9 +93,11 @@ let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['prettier', 'eslint'],
 \   'typescript': ['prettier', 'eslint'],
+\   'typescriptreact': ['prettier', 'eslint'],
+\   'json': ['fixjson'],
 \}
 let g:ale_linters = {
-\   'typescript': ['eslint'],
+\   'typescript': ['eslint', 'prettier'],
 \}
 
 let g:ale_fix_on_save = 1

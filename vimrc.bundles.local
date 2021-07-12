@@ -12,7 +12,6 @@ Plug 'mhinz/vim-grepper'
 Plug 'mxw/vim-jsx'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'posva/vim-vue'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'reasonml-editor/vim-reason-plus'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tomtom/tlib_vim' " needed for snipmate
