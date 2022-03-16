@@ -48,3 +48,5 @@ alias dieruby="ps aux |  grep rbenv | grep -v grep |  awk '{print $2}' | xargs k
 # use ctags from homebrew instead of /usr/bin/ctags
 # so neovim doesn't gutentags: ctags job failed, returned: 1
 alias ctags="`brew --prefix`/bin/ctags"
+
+alias whatsonport='_(){ lsof -wni tcp:$1 }; _'
