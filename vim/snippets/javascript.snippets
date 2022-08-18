@@ -2,7 +2,7 @@ snippet rc
 	import React from 'react';
 
 	const ${1:} = (props) => {
-	  return <p>$1</p>
+		return <p>$1</p>
 	}
 
 	export default $1;
@@ -32,6 +32,7 @@ snippet rt
 
 		});
 	});
+
 
 
 
@@ -76,4 +77,33 @@ snippet rtl
 			</I18nTestProvider>
 		);
 	});
+
+snippet ui
+	var(--store-ui-global-${1:});
+
+snippet rtn
+	import React from 'react';
+	import {render, screen} from '@/utils/testing';
+	import {ApolloProvider} from '@apollo/client';
+	import RootProvider from '@/components/RootProvider';
+	import {createApolloClient} from '@/apollo';
+	import ${1:} from '../$1';
+
+	const Component = () => (
+		<ApolloProvider client={createApolloClient()}>
+			<RootProvider>
+				<$1 />
+			</RootProvider>
+		</ApolloProvider>
+	);
+
+	describe('$1', () => {
+		it('${2}', () => {
+			render(<Component />)
+
+			expect(screen.getByText('lol')).toEqual(true)
+		});
+	});
+
+
 
