@@ -59,3 +59,5 @@ function git_prompt_info() {
 }
 
 PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+
+CDPATH=:~:~/code/ezcater
