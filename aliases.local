@@ -31,8 +31,8 @@ alias til='nvim ~/.TIL.md'
 
 alias fs='foreman start'
 
-# start plm-website
-alias s='cd ~/plm/plm-website; threeman start --open-in-new-tab; cd ~/plm/newswire; threeman start --open-in-new-tab; ~/plm/elasticsearch-5.2.0/bin/elasticsearch'
+# sync
+alias s='eztilt trigger ez-rails--sync'
 
 alias y='yarn'
 
