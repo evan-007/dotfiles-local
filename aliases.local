@@ -24,6 +24,9 @@ alias dbmt='RAILS_ENV=test bundle exec rake db:migrate'
 alias rc='bin/rails c'
 alias rs='bin/rails s'
 
+# ruby
+alias c='run rubocop -A $(git diff --name-only main -- "*.rb")'
+
 # ect
 alias notes='nvim ~/.notes.md'
 alias todo='nvim ~/.todo.md'
