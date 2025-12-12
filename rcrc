@@ -1,0 +1,5 @@
+  # Source the parent rcrc
+  . "$HOME/dotfiles/rcrc"
+
+  # Override just the EXCLUDES because claude files are .md
+  EXCLUDES="README.md LICENSE"
